@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Search</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1>Image Search</h1>
+  <form name="form-name">
+    <label for="searchTerm">Search Term</label>
+    <input class="u-full-width" type="text" id="searchTerm" name="searchTerm" />
+    <button type="submit">Search</button>
+  </form>
+  <img id="loadingImage"
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAAB7CAMAAAAonR7lAAAAFVBMVEX///9/f3/4+Pjq6uqzs7O2tradnZ3HwwKPAAACxElEQVR4nO2a227sIAxFG3P5/08uoDQBYxKCzpmxo72eRtNG8hobh9vPDwAAAAAAAAAAAAAAAABgCCKXyR8K347nn7GLNXLv8KvMnKNazr5frdbLmfZr1UQ5q3ZcTZYzqderjeTs2UluIzlrdqLbUM6Ynuh2IWfK7r2ZKxKP5NL34dtRz+F8GNkNGwrFzYSd835oN3oVJLdtc9+O/B4KXrbbNYZuW9Q/8opbZ9e2DNEt2X0r5lmc972dkBLBTX1hUvC93eBfO7dt012YR+JOu3HAnZvujknec7ubZDRuulPnfGd380Drpjp1oZXztx3Cbwy9qWOJm8kcl9PbMFniwkSk3E7tu45Y4qaywAtTa+oet5PyEJPT2lJ4Vc41h9DK+f8c5CIUVty61Onsl2zITdcXe9XpHHRsyE0HGQzKTZcXq0udHWVtyCVYR1E56Jjc/IPtoFO5IOfNcv5Jr1+Ob488eJDvIoHP0h00rj2oMnNsTf1gGmVgzDG5B2sXA91yPQHLKf8gbBr1rhnKapA25pZtkNN1aWJVQNtSlKu/yYdZ24O0sRLnYc61FCt7KDzOqSRY2f3idTkTqJl9y64u7+26HWetVdn3y/vCNHRWwFMXbzNHhk552tTlV9bVCqbcbrBzPtekrrhdjDsX09/ImTlZrVO3u6WIxXRQ+R3SmtbOmfjZ/g43UY/CrtRUpu7EVXdKqO7zsT2qc1X15ss3Vu6hVLeB+Iw45AbiXGDt/8yd2snJiZPdMl54z5/jzoBbjn/gluW6t/aRO+0DbicM3EZyxc6IW0Z0G8rZqMg/ZLexnC07oW9cyT0479LA0zFnC36rayyX1g62EpcJnZ4kF42V5B/ER54gZ1Qt48K13MztMMVQXZytXJps2k3bDrnDr5J7g9lOFoxxnzjHF4kdkCt7Kq/zAgAAAAAAAAAAAAAAAFD4BTJoFRGnTzwCAAAAAElFTkSuQmCC"
+    alt="sample" />
+  <section class="images-section" id="inject">
+    <!-- images loaded dynamically here -->
+  </section>
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>
